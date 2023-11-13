@@ -20,7 +20,7 @@ Compétence: récupérer les arguments.
 
 L'exercice " Récupération des arguments" est un incontournable pour tout débutant en programmation. Il sert d'introduction simple à un nouveau langage de programmation.
 L'objectif de cet exercice est de récupérer les arguments dans le main pour ensuite les afficher.
-Pour vous aider, voici le lien de la doc officiel de Rust:
+Pour vous aider, voici le lien de la doc officiel de CSharp:
 https://learn.microsoft.com/fr-fr/dotnet/csharp/programming-guide/
 
 exemple :
