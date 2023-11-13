@@ -11,8 +11,11 @@ class Hello
             try
             {
                 int temp = Int32.Parse(arg);
-                int index = Function(list, temp);
-                Console.WriteLine("index: " + index);
+                Function(list, temp);
+                Console.WriteLine("tab: " + string.Join(", ", list));
+                list[0] = 1;
+                list[1] = 2;
+                list[2] = 3;
             }
             catch (FormatException)
             {
@@ -21,16 +24,14 @@ class Hello
         }
     }
 
-    static int Function(int[] list, int nbr)
+    static void Function(int[] list, int nbr)
     {
         int idx = 0;
 
         foreach (int arg in list)
         {
-            if (arg == nbr)
-                return idx;
+            list[idx] += nbr;
             idx++;
         }
-        return -1;
     }
 }
